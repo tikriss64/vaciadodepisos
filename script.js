@@ -1,32 +1,33 @@
-// script.js - JavaScript para funcionalidades del sitio
+// script.js - JavaScript completo para funcionalidades del sitio
 
-// ===== MENÚ MÓVIL =====
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Script cargado correctamente');
+
+    // ===== MENÚ MÓVIL =====
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
-    if (menuToggle) {
+    if (menuToggle && navMenu) {
+        console.log('Inicializando menú móvil');
         menuToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             menuToggle.classList.toggle('active');
         });
-    }
 
-    // Cerrar menú al hacer clic en un enlace
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            menuToggle.classList.remove('active');
+        // Cerrar menú al hacer clic en enlaces
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
         });
-    });
+    }
 
     // ===== MODAL GALLERY =====
     const galleryItems = document.querySelectorAll('.gallery-item');
     const modal = document.querySelector('.modal');
     const modalSlides = document.querySelectorAll('.modal-slide');
-    const modalImages = document.querySelectorAll('.modal-image');
-    const modalCaptions = document.querySelectorAll('.modal-caption');
     const closeModal = document.querySelector('.close-modal');
     const modalPrev = document.querySelector('.modal-prev');
     const modalNext = document.querySelector('.modal-next');
@@ -34,121 +35,183 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let currentSlide = 0;
 
-    // Abrir modal
-    galleryItems.forEach((item, index) => {
-        item.addEventListener('click', function() {
-            currentSlide = index;
-            showSlide(currentSlide);
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+    if (galleryItems.length > 0 && modal) {
+        console.log('Inicializando galería modal');
+
+        // Abrir modal
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                currentSlide = index;
+                showSlide(currentSlide);
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
         });
-    });
 
-    // Cerrar modal
-    closeModal.addEventListener('click', function() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    });
-
-    // Cerrar modal al hacer clic fuera
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
+        // Cerrar modal
+        closeModal.addEventListener('click', function() {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
-        }
-    });
-
-    // Navegación
-    modalPrev.addEventListener('click', function() {
-        currentSlide = (currentSlide - 1 + modalSlides.length) % modalSlides.length;
-        showSlide(currentSlide);
-    });
-
-    modalNext.addEventListener('click', function() {
-        currentSlide = (currentSlide + 1) % modalSlides.length;
-        showSlide(currentSlide);
-    });
-
-    // Thumbnails
-    modalThumbs.forEach((thumb, index) => {
-        thumb.addEventListener('click', function() {
-            currentSlide = index;
-            showSlide(currentSlide);
         });
-    });
 
-    // Teclado
-    document.addEventListener('keydown', function(e) {
-        if (modal.style.display === 'block') {
-            if (e.key === 'ArrowLeft') {
-                currentSlide = (currentSlide - 1 + modalSlides.length) % modalSlides.length;
-                showSlide(currentSlide);
-            } else if (e.key === 'ArrowRight') {
-                currentSlide = (currentSlide + 1) % modalSlides.length;
-                showSlide(currentSlide);
-            } else if (e.key === 'Escape') {
+        // Cerrar al hacer clic fuera
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             }
-        }
-    });
+        });
 
-    function showSlide(n) {
-        modalSlides.forEach(slide => slide.classList.remove('active'));
-        modalThumbs.forEach(thumb => thumb.classList.remove('active'));
-        
-        modalSlides[n].classList.add('active');
-        modalThumbs[n].classList.add('active');
+        // Navegación
+        if (modalPrev) {
+            modalPrev.addEventListener('click', function() {
+                currentSlide = (currentSlide - 1 + modalSlides.length) % modalSlides.length;
+                showSlide(currentSlide);
+            });
+        }
+
+        if (modalNext) {
+            modalNext.addEventListener('click', function() {
+                currentSlide = (currentSlide + 1) % modalSlides.length;
+                showSlide(currentSlide);
+            });
+        }
+
+        // Thumbnails
+        modalThumbs.forEach((thumb, index) => {
+            thumb.addEventListener('click', function() {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Teclado
+        document.addEventListener('keydown', function(e) {
+            if (modal.style.display === 'block') {
+                if (e.key === 'ArrowLeft') {
+                    currentSlide = (currentSlide - 1 + modalSlides.length) % modalSlides.length;
+                    showSlide(currentSlide);
+                } else if (e.key === 'ArrowRight') {
+                    currentSlide = (currentSlide + 1) % modalSlides.length;
+                    showSlide(currentSlide);
+                } else if (e.key === 'Escape') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+
+        function showSlide(n) {
+            modalSlides.forEach(slide => slide.classList.remove('active'));
+            modalThumbs.forEach(thumb => thumb.classList.remove('active'));
+            
+            if (modalSlides[n]) {
+                modalSlides[n].classList.add('active');
+            }
+            if (modalThumbs[n]) {
+                modalThumbs[n].classList.add('active');
+            }
+        }
     }
 
     // ===== ACORDEÓN FAQ =====
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const accordionItem = this.parentElement;
-            const accordionContent = this.nextElementSibling;
-            const icon = this.querySelector('i');
-            
-            // Cerrar otros acordeones
-            document.querySelectorAll('.accordion-content').forEach(content => {
-                if (content !== accordionContent && content.classList.contains('active')) {
-                    content.classList.remove('active');
-                    content.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+    if (accordionHeaders.length > 0) {
+        console.log('Inicializando acordeón FAQ');
+        
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const accordionItem = this.parentElement;
+                const accordionContent = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Cerrar otros acordeones
+                document.querySelectorAll('.accordion-content').forEach(content => {
+                    if (content !== accordionContent && content.classList.contains('active')) {
+                        content.classList.remove('active');
+                        const otherIcon = content.previousElementSibling.querySelector('i');
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle actual
+                accordionContent.classList.toggle('active');
+                
+                if (accordionContent.classList.contains('active')) {
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                } else {
+                    if (icon) icon.style.transform = 'rotate(0deg)';
                 }
             });
-            
-            // Toggle actual
-            accordionContent.classList.toggle('active');
-            
-            if (accordionContent.classList.contains('active')) {
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                icon.style.transform = 'rotate(0deg)';
-            }
         });
+    }
+
+    // ===== VIDEOS YOUTUBE =====
+    document.querySelectorAll('.video-card').forEach(card => {
+        const thumbnail = card.querySelector('.media-thumbnail');
+        const videoId = thumbnail.getAttribute('data-video-id');
+        const videoThumbnail = thumbnail.querySelector('.video-thumbnail');
+        const playButton = thumbnail.querySelector('.video-play-button');
+        const videoPlayer = thumbnail.querySelector('.video-player');
+        
+        // Establecer miniatura del video
+        if (videoThumbnail && videoId) {
+            videoThumbnail.style.backgroundImage = `url(https://img.youtube.com/vi/${videoId}/maxresdefault.jpg)`;
+        }
+        
+        // Reproducir video al hacer clic
+        if (playButton) {
+            playButton.addEventListener('click', function() {
+                if (videoPlayer && videoId) {
+                    videoPlayer.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+                    thumbnail.classList.add('video-loaded');
+                }
+            });
+        }
     });
 
-    // ===== VIDEO YOUTUBE =====
-    const videoPlaceholders = document.querySelectorAll('.video-placeholder');
+    // ===== ANIMACIONES SCROLL =====
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
     
-    videoPlaceholders.forEach(placeholder => {
-        const playButton = placeholder.querySelector('.play-button');
-        const thumbnail = placeholder.querySelector('.thumbnail');
-        
-        playButton.addEventListener('click', function() {
-            const videoId = this.getAttribute('data-video-id');
-            const iframe = document.createElement('iframe');
-            
-            iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allow', 'autoplay; encrypted-media');
-            iframe.setAttribute('allowfullscreen', '');
-            
-            placeholder.innerHTML = '';
-            placeholder.appendChild(iframe);
-            placeholder.classList.add('loaded');
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
         });
+    }, observerOptions);
+    
+    // Observar elementos para animación
+    document.querySelectorAll('.service-card, .testimonial-card, .step, .gallery-item').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+    });
+    
+    // Animación para las tarjetas de precios
+    document.querySelectorAll('.pricing .location-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+    
+    // Animación para la sección de características del hero
+    document.querySelectorAll('.feature-card').forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+        
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 1500 + (index * 100));
     });
 
     // ===== SCROLL SUAVE =====
@@ -174,73 +237,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ===== HEADER SCROLL EFFECT =====
-    let lastScrollTop = 0;
-    const header = document.querySelector('header');
-    
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > 100) {
-            header.style.padding = '10px 0';
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-        } else {
-            header.style.padding = '15px 0';
-            header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
-        }
-        
-        lastScrollTop = scrollTop;
-    });
-
-    // ===== FORMULARIO CONTACTO =====
-    const contactForm = document.querySelector('.contact-form form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Validación básica
-            const nombre = this.querySelector('input[name="nombre"]').value;
-            const email = this.querySelector('input[name="email"]').value;
-            const telefono = this.querySelector('input[name="telefono"]').value;
-            const mensaje = this.querySelector('textarea[name="mensaje"]').value;
-            
-            if (!nombre || !email || !telefono || !mensaje) {
-                alert('Por favor, completa todos los campos obligatorios.');
-                return;
-            }
-            
-            // Aquí iría la lógica para enviar el formulario
-            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-            this.reset();
-        });
-    }
+    console.log('Todas las funcionalidades inicializadas correctamente');
 });
-
-// ===== ANIMACIONES AL SCROLL =====
-function initScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.service-card, .testimonial-card, .gallery-item, .step, .media-card');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-}
-
-// Inicializar cuando el DOM esté listo
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initScrollAnimations);
-} else {
-    initScrollAnimations();
-}
