@@ -345,3 +345,66 @@ window.onclick = function(event) {
         closeGoogleReviews();
     }
 }
+// ===== GOOGLE REVIEWS FUNCTIONS =====
+function openGoogleReviews() {
+    const modal = document.getElementById('googleReviewsModal');
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Evitar scroll
+        loadGoogleReviews();
+    }
+}
+
+function closeGoogleReviews() {
+    const modal = document.getElementById('googleReviewsModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restaurar scroll
+    }
+}
+
+function loadGoogleReviews() {
+    const container = document.getElementById('reviewsContainer');
+    if (container) {
+        // Simular carga de reseñas
+        setTimeout(() => {
+            container.innerHTML = `
+                <div class="review-item-modal">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Cliente Satisfecho</h4>
+                            <div class="review-date">Octubre 2024</div>
+                        </div>
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Excelente servicio profesional. Rápidos y eficientes. Muy recomendable!"</p>
+                </div>
+                <div class="review-item-modal">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Ana García</h4>
+                            <div class="review-date">Septiembre 2024</div>
+                        </div>
+                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Muy contenta con el trabajo. Todo perfecto y precios justos."</p>
+                </div>
+            `;
+        }, 800);
+    }
+}
+
+// Cerrar modal al hacer clic fuera
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('googleReviewsModal');
+    if (event.target === modal) {
+        closeGoogleReviews();
+    }
+});
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeGoogleReviews();
+    }
+});
