@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Vaciado de Pisos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-home"></i>VaciadoDePisos<span>.cat</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#gallery">Trabajos</a></li>
+                <li><a href="index.html#process">Proceso</a></li>
+                <li><a href="index.html#testimonials">Testimonios</a></li>
+                <li><a href="index.html#faq" class="menu-faq">FAQ</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            
+            <div class="header-contact">
+                <div class="header-social">
+                    <a href="https://www.facebook.com/vaciadodepisoscatalunya" target="_blank" title="Síguenos en Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/vaciadodepisos.cat/" target="_blank" title="Síguenos en Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@VaciadodePisos" target="_blank" title="Visita nuestro canal de YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- MENÚ MÓVIL -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" id="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav">
+            <li><a href="/index.html#inicio">Inicio</a></li>
+            <li><a href="/quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="/index.html#services">Servicios</a></li>
+            <li><a href="/index.html#gallery">Trabajos</a></li>
+            <li><a href="/index.html#process">Proceso</a></li>
+            <li><a href="/index.html#testimonials">Testimonios</a></li>
+            <li><a href="/index.html#faq">FAQ</a></li>
+            <li><a href="/index.html#contact">Contacto</a></li>
+        </ul>
+    </div>
+
+
+     <!-- Hero Section con eslogan -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">¿Preparando su piso para la venta? Nosotros nos ocupamos.</h1>
+        </div>
+    </section>
+
+    <!-- About Content - Cuadro blanco centrado -->
+    <section class="section" style="padding: 80px 0; background: #f9f9f9;">
+        <div class="container">
+            <div class="about-improved">
+                <div class="about-photo-small">
+                    <img src="imagenes/martin-salas.webp" alt="Martín Salas fundador VaciaDoDePisos">
+                </div>
+                <div class="about-text-content">
+                    <h2>Martín Salas</h2>
+                    <p>Martín Salas, vecino de Sitges y emprendedor del sector, fundó ECHONET SCP en 2009. Con una larga trayectoria proporcionando servicios de limpieza ecológica para vehículos y limpieza en seco para inmuebles a clientes exigentes como ayuntamientos y fondos de inversión, ha decidido orientar su experiencia hacia un servicio más directo para particulares.</p>
+                    
+                    <p>Su objetivo es claro: resolver las incidencias más comunes de su propiedad para facilitar y acelerar su venta o alquiler. Gracias a su colaboración continua con diversas inmobiliarias de la comarca del Garraf, conoce de primera mano qué buscan los compradores y qué valoran las agencias. Confíe en su experiencia para un asesoramiento honesto y efectivo.</p>
+                    
+                    <div class="about-cta">
+                        <a href="index.html#contact" class="btn">
+                            <i class="fas fa-calendar-check"></i>
+                            Solicitar Valoración Sin Compromiso
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 VaciadoDePisos.cat - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Menú móvil para quienes-somos.html
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (mobileMenu && navMenu) {
+                mobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+            
+            // Cerrar menú al hacer clic en enlaces
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
