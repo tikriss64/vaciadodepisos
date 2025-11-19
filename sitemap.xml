@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://vaciadodepisos.cat/</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/index.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/index-ca.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaciadodepisos.cat/"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/index-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vaciadodepisos.cat/"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/quienes-somos.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/qui-som-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/qui-som-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/quienes-somos.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/blog.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/blog-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/blog-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/blog.html"/>
+  </url>
+
+  <!-- Artículos del Blog - Español -->
+  <url>
+    <loc>https://vaciadodepisos.cat/cambio-inquilinos-preparacion-pisos-alquiler.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/cambio-inquilinos-preparacion-pisos-alquiler-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/como-elegir-empresa-vaciado-pisos-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/como-elegir-empresa-vaciado-pisos-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/consejos-preparar-piso-venta-rapida-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/consejos-preparar-piso-venta-rapida-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/diferencia-vaciado-limpieza-reforma-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/diferencia-vaciado-limpieza-reforma-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/donde-tirar-muebles-enceres-barcelona-guia-2024.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/donde-tirar-muebles-enceres-barcelona-guia-2024-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/guia-precios-vaciado-pisos-barcelona-2024.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/guia-precios-vaciado-pisos-barcelona-2024-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/proceso-liquidacion-herencias-barcelona-pasos.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/proceso-liquidacion-herencias-barcelona-pasos-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-gratis-pisos-barcelona-cuando-posible.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-gratis-pisos-barcelona-cuando-posible-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-naves-industriales-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-naves-industriales-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-pisos-ancianos-barcelona-atencion-especial.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-pisos-ancianos-barcelona-atencion-especial-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-pisos-para-inmobiliarias-barcelona.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-pisos-para-inmobiliarias-barcelona-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa-ca.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-urgente-pisos-barcelona-24-horas.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://vaciadodepisos.cat/vaciado-urgente-pisos-barcelona-24-horas-ca.html"/>
+  </url>
+
+  <!-- Artículos del Blog - Catalán -->
+  <url>
+    <loc>https://vaciadodepisos.cat/cambio-inquilinos-preparacion-pisos-alquiler-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/cambio-inquilinos-preparacion-pisos-alquiler.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/como-elegir-empresa-vaciado-pisos-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/como-elegir-empresa-vaciado-pisos-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/como-saber-precio-vaciado-piso-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/consejos-preparar-piso-venta-rapida-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/consejos-preparar-piso-venta-rapida-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/diferencia-vaciado-limpieza-reforma-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/diferencia-vaciado-limpieza-reforma-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/donde-tirar-muebles-enceres-barcelona-guia-2024-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/donde-tirar-muebles-enceres-barcelona-guia-2024.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/guia-precios-vaciado-pisos-barcelona-2024-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/guia-precios-vaciado-pisos-barcelona-2024.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/limpieza-sindrome-diogenes-barcelona-protocolo.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/proceso-liquidacion-herencias-barcelona-pasos-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/proceso-liquidacion-herencias-barcelona-pasos.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-gratis-pisos-barcelona-cuando-posible-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-gratis-pisos-barcelona-cuando-posible.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-naves-industriales-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-naves-industriales-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-pisos-ancianos-barcelona-atencion-especial-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-pisos-ancianos-barcelona-atencion-especial.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-pisos-para-inmobiliarias-barcelona-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-pisos-para-inmobiliarias-barcelona.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-por-defuncion-barcelona-guia-completa.html"/>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/vaciado-urgente-pisos-barcelona-24-horas-ca.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaciadodepisos.cat/vaciado-urgente-pisos-barcelona-24-horas.html"/>
+  </url>
+
+  <!-- Páginas de agradecimiento -->
+  <url>
+    <loc>https://vaciadodepisos.cat/gracias.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://vaciadodepisos.cat/gràcies.html</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
